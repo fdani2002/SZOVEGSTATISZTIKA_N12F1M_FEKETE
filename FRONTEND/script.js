@@ -6,4 +6,7 @@ document.getElementById("analyzeBtn").addEventListener("click", function()
         alert("Adjon meg valami szöveget!");
         return;
     }
+    const wordCount = text.trim().split(/\s+/).length;
+    document.getElementById("results").innerHTML = `<p> Szavak száma: ${wordCount} </p>`;
+    
 });
