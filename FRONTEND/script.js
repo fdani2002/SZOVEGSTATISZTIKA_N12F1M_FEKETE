@@ -8,5 +8,8 @@ document.getElementById("analyzeBtn").addEventListener("click", function()
     }
     const wordCount = text.trim().split(/\s+/).length;
     document.getElementById("results").innerHTML = `<p> Szavak száma: ${wordCount} </p>`;
+
+    const letterCount = text.replace(/\s+/g, "").length;
+    document.getElementById("results").innerHTML += `<p> Karakterek száma: ${letterCount} </p>`;
     
 });
